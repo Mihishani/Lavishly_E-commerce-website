@@ -4,8 +4,12 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header>
-      <div>
+    <header
+      className={
+        "fixed top-0 m-auto max_padd_container w-full bg-white ring-1 ring-slate-900/5 z-10"
+      }
+    >
+      <div className={"px-4 flexBetween py-3 max-xs:px-2"}>
         {/*logo*/}
         <div>
           <Link>
@@ -13,6 +17,8 @@ const Header = () => {
           </Link>
         </div>
         <Navbar />
+        {/*Button*/}
+        <div>button</div>
       </div>
     </header>
   );

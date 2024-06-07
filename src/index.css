@@ -224,7 +224,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lancelot', 'Kings', 'Galada' ,inherit sans-serif;
 }
 
 .linearGradient {
@@ -308,7 +308,8 @@
     }
 
     .max_padd_container {
-        @apply mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0;
+        /*@apply mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0;*/
+        @apply mx-auto max-w-[1940px] px-6 lg:px-20 3xl:px-0;
     }
 
     .flexCenter {
