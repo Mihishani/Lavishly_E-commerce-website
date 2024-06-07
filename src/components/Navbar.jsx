@@ -1,46 +1,55 @@
 import { NavLink } from "react-router-dom";
 import {
   MdContactPhone,
-  MdContacts,
-  MdContactSupport,
-  MdHelp,
   MdHome,
   MdLocalOffer,
   MdNewLabel,
-  MdOpenInNew,
-  MdOutlineChildCare,
-  MdOutlineContactPhone,
   MdShop,
 } from "react-icons/md";
 
 const Navbar = ({ containerStyles }) => {
   return (
     <nav className={`${containerStyles}`}>
-      <NavLink to={"/"}>
+      <NavLink
+        to={"/"}
+        className={({ isActive }) => (isActive ? "active_link" : "")}
+      >
         <div className={"flexCenter gap-x-1"}>
           <MdHome />
           Home
         </div>
       </NavLink>
-      <NavLink to={"/category"}>
+      <NavLink
+        to={"/category"}
+        className={({ isActive }) => (isActive ? "active_link" : "")}
+      >
         <div className={"flexCenter gap-x-1"}>
           <MdShop />
           Shop
         </div>
       </NavLink>
-      <NavLink to={"/offers"}>
+      <NavLink
+        to={"/offers"}
+        className={({ isActive }) => (isActive ? "active_link" : "")}
+      >
         <div className={"flexCenter gap-x-1"}>
           <MdLocalOffer />
           Offers
         </div>
       </NavLink>
-      <NavLink to={"/latest"}>
+      <NavLink
+        to={"/latest"}
+        className={({ isActive }) => (isActive ? "active_link" : "")}
+      >
         <div className={"flexCenter gap-x-1"}>
           <MdNewLabel />
           Latest
         </div>
       </NavLink>
-      <NavLink to={"/customerCare"}>
+      <NavLink
+        to={"/customerCare"}
+        className={({ isActive }) => (isActive ? "active_link" : "")}
+      >
         <div className={"flexCenter gap-x-1"}>
           <MdContactPhone />
           Customer Care
