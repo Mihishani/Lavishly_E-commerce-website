@@ -32,8 +32,8 @@ import { NavLink } from "react-router-dom";
 
 const Hero = () => {
     return (
-        <section className="relative bg-wallpaper bg-center bg-no-repeat h-screen w-full flex items-center justify-center">
-            <div className=" absolute w-[1500px] top-[113px] h-[640px] sm:h-[600px] md:h-[560px] lg:h-[520px] xl:h-[480px] 2xl:h-[640px] mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 2xl:mt-14 mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-16 bg-teal-200 bg-opacity-50 text-center border-1 rounded-md">
+        <section className="relative bg-wallpaper bg-cover bg-center bg-no-repeat h-screen w-full flex items-center justify-center">
+            <div className="absolute w-full sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1500px] bg-center bg-no-repeat h-[500px] top-[113px] sm:h-[600px] md:h-[560px] lg:h-[450px] 2xl:h-[540px] mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 2xl:mt-14 mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-16 bg-teal-200 bg-opacity-50 text-center border border-solid border-gray-300 rounded-md">
                 <div className="mt-32">
                     <h1 className="font-bold text-3xl sm:text-4xl lg:text-4xl xl:text-5xl text-secondary">Welcome to LAVISHLY - Your Oasis of Beauty and Style!</h1>
                     <p className="text-lg sm:text-xl lg:text-2xl text-tertiary mt-4">Hello Beautiful Souls!<br />
