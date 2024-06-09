@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header
       className={
-        "fixed top-0 m-auto max_padd_container w-full bg-transparent ring-1 ring-slate-900/5 z-10"
+        "fixed top-0 m-auto max_padd_container w-full bg-white ring-1 ring-slate-900/5 z-10"
       }
     >
       <div className={"px-4 flexBetween py-3 max-xs:px-2"}>

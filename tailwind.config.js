@@ -82,7 +82,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        wallpaper: "url('')",
+        wallpaper: "url('/src/assets/images/newWallpaper.png')",
       },
       screens: {
         xs: "400px",
