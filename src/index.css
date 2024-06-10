@@ -282,7 +282,7 @@
 
 @layer utilities {
     .btn_white_rounded {
-        @apply medium-15 border border-white bg-white px-7 py-3 text-gray-90 rounded-full;
+        @apply medium-15 border border-black bg-secondary px-7 py-3 text-white rounded-full hover:text-secondary hover:bg-teal-100;
     }
 
     .btn_white_hover {
