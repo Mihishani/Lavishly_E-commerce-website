@@ -231,6 +231,8 @@
     background-image: url('/src/assets/images/Background.png');
 }*/
 
+
+
 .linearGradient {
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
 }

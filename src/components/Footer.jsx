@@ -3,7 +3,7 @@ import {FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS} from "../assets/data";
 
 const Footer = () => {
     return (
-        <footer className={'flexCenter pb-24 pt-20 relative top-3'}>
+        <footer className={'flexCenter pb-24 pt-20 relative top-3 bg-white'}>
             <div className={'max_padd_container flex w-full flex-col gap-14'}>
                 <div className={'flex flex-col items-start justify-center gap-[10%] md:flex-row'}>
                     <Link to={'/'} className={'mb-10 bold-20'}>Customer Care</Link>

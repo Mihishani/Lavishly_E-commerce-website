@@ -1,6 +1,6 @@
-import p1_image from './images/Niacinamide.jpg'
-import p2_image from './images/salicylic.jpg'
-import p3_image from './images/peeling.jpg'
+import p1_image from './images/The-Ordinary-Niacinamide.jpg'
+import p2_image from './images/Ordinar_Salicylic.jpg'
+import p3_image from './images/TheOrdinaryAHA30_BHA2_PeelingSolution30ml.webp'
 import p4_image from './images/Marine.jpg'
 import p5_image from './images/b61d65f589ca63cb6e3d8bddeee837ba.jpg'
 
@@ -57,13 +57,13 @@ export const OFFERS = [
         new_price:5764.00,
         old_price:6550.00
     },
-    {
+ /*   {
         id:5,
         name:'The ordinary Vitamin C Suspension 23% + HA Spheres 2%',
         image:p5_image,
         new_price:5764.00,
         old_price:6550.00
-    },
+    },*/
 ];
 
 export const LATEST = [
