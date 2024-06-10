@@ -1,5 +1,4 @@
 import {OFFERS} from "../assets/data";
-import item from "./Item";
 import Item from "./Item";
 
 const Offer = () => {
