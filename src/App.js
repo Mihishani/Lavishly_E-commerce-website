@@ -6,6 +6,8 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Product from "./pages/Product";
 import Footer from "./components/Footer";
+import Offer from "./components/Offer";
+import Latest from "./components/Latest";
 
 function App() {
   return (
@@ -15,8 +17,8 @@ function App() {
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/shop"} element={<Category />} />
-          <Route path={"/offers"} element={<Category />} />
-          <Route path={"/latest"} element={<Category />} />
+          <Route path={"/offers"} element={<Offer />} />
+          <Route path={"/latest"} element={<Latest />} />
           <Route path={"/customerCare"} element={<Category />} />
           <Route path={"/product"} element={<Product />}>
             <Route path=":productId" element={<Product />} />
