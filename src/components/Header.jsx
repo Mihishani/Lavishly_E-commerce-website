@@ -2,14 +2,16 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/the (1).png";
 import user from "../assets/images/icons8-login-67.png";
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 import { FaOpencart } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
+import { ShopContext } from "../Context/ShopContext";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const toggleMenu = () => setMenuOpened(!menuOpened);
+  const { getTotalCartItems } = useContext(ShopContext);
   return (
     <header
       className={
@@ -59,10 +61,10 @@ const Header = () => {
               <IoMdCart className={"p-1 h-8 w-8 ring-slate-900/30"} />
               <span
                 className={
-                  "relative flexCenter w-5 h-5 rounded-full bg-orange-600 text-white medium-14 -top-2"
+                  "relative flexCenter w-5 h-5 rounded-full bg-orange-600 text-white medium-14 -top-2 font-sans"
                 }
               >
-                0
+                {getTotalCartItems()}
               </span>
             </NavLink>
 
