@@ -1,8 +1,11 @@
 import product from "../pages/Product";
 import { MdStar } from "react-icons/md";
+import { useContext } from "react";
+import { ShopContext } from "../Context/ShopContext";
 
 const ProductDispaly = (props) => {
   const { product } = props;
+  const { addToCart } = useContext(ShopContext);
   return (
     <section>
       <div className={"flex flex-col gap-14 xl:flex-row"}>
@@ -36,6 +39,9 @@ const ProductDispaly = (props) => {
                     </div>*/}
             <div className={"flex flex-col gap-y-3 mb-4 max-w-[555px]"}>
               <button
+                onClick={() => {
+                  addToCart(product.id);
+                }}
                 className={
                   "btn_dark_outline !rounded-none uppercase regular-14 tracking-widest"
                 }
