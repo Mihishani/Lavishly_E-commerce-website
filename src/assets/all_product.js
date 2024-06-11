@@ -5,15 +5,16 @@ import p25_image from './images/girls hand bags.jpeg'
 import p26_image from './images/9Pairs Gold Plated Earring set.jpg'
 import p27_image from './images/Ankle Strap Flats.jpg'
 import p28_image from './images/Lacoste Straightset.jpeg'
+import p1_image from './images/The-Ordinary-Niacinamide.jpg'
 
 export let all_product = [
     {
-        id: 1,
-        name: '5 New Makeup Releases at Sephora To Splurge',
+        id:1,
+        name:'The ordinary Niacinamide 10% + Zinc 1% ',
         category: 'skin',
-        image: p22_image,
-        new_price: 5000.00,
-        old_price: 6000.00,
+        image:p1_image,
+        new_price:5764.00,
+        old_price:6550.00
     },
     {
         id: 1,
@@ -24,7 +25,15 @@ export let all_product = [
         old_price: 6000.00,
     },
     {
-        id: 1,
+        id: 2,
+        name: '5 New Makeup Releases at Sephora To Splurge',
+        category: 'skin',
+        image: p22_image,
+        new_price: 5000.00,
+        old_price: 6000.00,
+    },
+    {
+        id: 3,
         name: '5 New Makeup Releases at Sephora To Splurge',
         category: 'skin',
         image: p22_image,

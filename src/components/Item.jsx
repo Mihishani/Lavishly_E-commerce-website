@@ -28,7 +28,7 @@ const Item = ({ id, name, image, old_price, new_price }) => {
         <div className={'rounded-xl overflow-hidden shadow-lg'}>
             <div className={'relative flexCenter group overflow-hidden transition-all duration-100'}>
                 <Link
-                    to={`product/${id}`}
+                    to={`/product/${id}`}
                     className={'h-full w-full absolute top-0 left-0 flexCenter z-20 transition-all duration-700'}>
                     {/* <FaSearch className={'hover:rotate-90 hover:scale-125 transition-all duration-200'}/> */}
                 </Link>
