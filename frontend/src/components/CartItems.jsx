@@ -45,7 +45,9 @@ const CartItems = () => {
                     <div className={"line-clamp-3"}>{e.name}</div>
                   </td>
                   <td className={"font-sans"}>RS. {e.new_price}.00</td>
-                  <td className={"w-16 h-16 bg-white"}>{cartItems[e.id]}</td>
+                  <td className={"w-16 h-16 bg-white font-sans"}>
+                    {cartItems[e.id]}
+                  </td>
                   <td className={"font-sans"}>
                     RS. {e.new_price * cartItems[e.id]}.00
                   </td>
