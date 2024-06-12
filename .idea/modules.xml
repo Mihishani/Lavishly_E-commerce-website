@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/lavishly.iml" filepath="$PROJECT_DIR$/.idea/lavishly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_lavishly.iml" filepath="$PROJECT_DIR$/web_lavishly.iml" />
     </modules>
   </component>
 </project>
