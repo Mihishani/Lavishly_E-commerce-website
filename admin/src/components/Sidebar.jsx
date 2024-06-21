@@ -25,7 +25,7 @@ const Sidebar = () => {
             "flexCenter gap-2 rounded-md bg-primary h-14 w-44 medium-16"
           }
         >
-          <img src={listProduct} alt={""} height={55} width={55} />
+          <img src={listProduct} alt={""} height={56} width={56} />
           <span>Product List</span>
         </button>
       </Link>
