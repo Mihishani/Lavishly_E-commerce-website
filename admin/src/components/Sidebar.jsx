@@ -26,7 +26,7 @@ const Sidebar = () => {
           }
         >
           <img src={listProduct} alt={""} height={55} width={55} />
-          <span>Add Product</span>
+          <span>Product List</span>
         </button>
       </Link>
     </div>
