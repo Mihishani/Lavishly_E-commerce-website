@@ -12,7 +12,7 @@ const Sidebar = () => {
       <Link to={"/addproduct"}>
         <button
           className={
-            "flexCenter gap-2 rounded-md bg-primary h-14 w-40 xs:w-44 medium-14 sm:medium-16"
+            "flexCenter gap-2 rounded-md bg-teal-50 ring-1 ring-gray-20 h-14 w-40 xs:w-44 medium-14 sm:medium-16"
           }
         >
           <img src={addProduct} alt={""} height={55} width={55} />
@@ -22,7 +22,7 @@ const Sidebar = () => {
       <Link to={"/listproduct"}>
         <button
           className={
-            "flexCenter gap-2 rounded-md bg-primary h-14 w-40 xs:w-44 medium-14 sm:medium-16"
+            "flexCenter gap-2 rounded-md bg-teal-50 ring-1 ring-gray-20 h-14 w-40 xs:w-44 medium-14 sm:medium-16"
           }
         >
           <img src={listProduct} alt={""} height={56} width={56} />
