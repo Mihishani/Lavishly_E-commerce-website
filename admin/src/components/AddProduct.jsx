@@ -1,4 +1,5 @@
 import upload_area from "../assets/images/upload image.webp";
+import { MdAdd } from "react-icons/md";
 const AddProduct = () => {
   return (
     <div className={"p-8 box-border bg-white w-full rounded-sm mt-4"}>
@@ -68,6 +69,10 @@ const AddProduct = () => {
           className={"bg-primary max-w-80 w-full py-3 px-4"}
         />
       </div>
+
+      <button className={"btn_dark_rounded mt-4 flexCenter gap-x-1"}>
+        <MdAdd /> Add Product
+      </button>
     </div>
   );
 };
