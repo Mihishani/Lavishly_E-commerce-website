@@ -1,6 +1,11 @@
 import upload_area from "../assets/images/upload image.webp";
 import { MdAdd } from "react-icons/md";
+import { useState } from "react";
 const AddProduct = () => {
+  const [image, setImage] = useState(false);
+  const imageHandler = (e) => {
+    setImage(e.target.files[0]);
+  };
   return (
     <div className={"p-8 box-border bg-white w-full rounded-sm mt-4"}>
       <div>
@@ -56,12 +61,13 @@ const AddProduct = () => {
       <div>
         <label htmlFor={"file-input"}>
           <img
-            src={upload_area}
+            src={image ? URL.createObjectURL(image) : upload_area}
             alt={""}
             className={"w-20 rounded-sm inline-block"}
           />
         </label>
         <input
+          onChange={imageHandler}
           type={"file"}
           name={"image"}
           id={"file-input"}
