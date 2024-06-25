@@ -17,12 +17,16 @@ const ListProduct = () => {
   }, []);
 
   return (
-    <div>
-      <h4>Products List</h4>
-      <div>
+    <div
+      className={
+        "p-2 box-border bg-white mb-0 rounded-sm w-full mt-4 sm:p-4 sm:m-7"
+      }
+    >
+      <h4 className={"bold-22 p-5 uppercase"}>Products List</h4>
+      <div className={"max-h-[77vh] overflow-auto px-4 text-center"}>
         <table className={"w-full mx-auto"}>
           <thead>
-            <tr>
+            <tr className={"bg-primary bold-14 sm:regular-22 text-start py-12"}>
               <th className={"p-2"}>Products</th>
               <th className={"p-2"}>Title</th>
               <th className={"p-2"}>Old Price</th>
@@ -33,18 +37,29 @@ const ListProduct = () => {
           </thead>
           <tbody>
             {allproducts.map((product, i) => (
-              <tr key={i}>
-                <td height={60} width={60}>
-                  <img src={product.image} alt={""} />
+              <tr
+                key={i}
+                className={
+                  "border-b border-slate-900/20 text-gray-500 p-6 medium-14"
+                }
+              >
+                <td className={"flexStart sm:flexCenter"}>
+                  <img
+                    height={43}
+                    width={43}
+                    className={"rounded-lg ring-1 ring-slate-900/5 my-1"}
+                    src={product.image}
+                    alt={""}
+                  />
                 </td>
                 <td>
-                  <div>{product.name}</div>
+                  <div className={"line-clamp-3"}>{product.name}</div>
                 </td>
                 <td className={"font-sans"}>RS. {product.old_price}</td>
                 <td className={"font-sans"}>RS. {product.new_price}</td>
                 <td>{product.category}</td>
                 <td>
-                  <div className={"text-red-700"}>
+                  <div className={"bold-22 pl-6 sm:pl-14 text-red-700"}>
                     <TbTrash />
                   </div>
                 </td>
