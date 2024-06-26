@@ -314,6 +314,29 @@ app.get("/allproducts", async (req, res) => {
   res.send(products);
 });
 
+// Schema for model
+const user = mongoose.model("User", {
+  name: {
+    type: String,
+  },
+  email: {
+    type: String,
+    unique: true,
+  },
+  password: {
+    type: String,
+  },
+  carData: {
+    type: Object,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+//Creating endpoint for registering the user
+
 app.listen(port, (error) => {
   if (!error) {
     console.log("Server is running on port " + port);
