@@ -315,7 +315,7 @@ app.get("/allproducts", async (req, res) => {
 });
 
 // Schema for model
-const user = mongoose.model("User", {
+const User = mongoose.model("User", {
   name: {
     type: String,
   },
