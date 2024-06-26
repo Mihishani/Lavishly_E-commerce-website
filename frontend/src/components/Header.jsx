@@ -68,18 +68,27 @@ const Header = () => {
               </span>
             </NavLink>
 
-            <NavLink to={"login"} className={"  flexCenter gap-x-2 medium-16"}>
-              <img src={user} alt={"usericon"} height={19} width={19} />
-            </NavLink>
-
-            <NavLink
-              to={"logout"}
-              className={
-                "btn_secondary_rounded flexCenter hover:text-black gap-x-2 medium-16 hidden"
-              }
-            >
-              Logout
-            </NavLink>
+            {localStorage.getItem("auth-token") ? (
+              <NavLink
+                onClick={() => {
+                  localStorage.removeItem("auth-token");
+                  window.location.replace("/");
+                }}
+                to={"logout"}
+                className={
+                  "btn_secondary_rounded flexCenter hover:text-black gap-x-2 medium-16 hidden"
+                }
+              >
+                Logout
+              </NavLink>
+            ) : (
+              <NavLink
+                to={"login"}
+                className={"  flexCenter gap-x-2 medium-16"}
+              >
+                <img src={user} alt={"usericon"} height={19} width={19} />
+              </NavLink>
+            )}
           </div>
         </div>
       </div>
