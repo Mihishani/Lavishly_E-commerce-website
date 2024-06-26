@@ -3,12 +3,22 @@ import { useState } from "react";
 const Login = () => {
   const [state, setState] = useState("Login");
 
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+    email: "",
+  });
+
+  const changeHandler = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   const login = async () => {
-    console.log("Login function executed");
+    console.log("Login function executed", formData);
   };
 
   const signup = async () => {
-    console.log("SignUp function executed");
+    console.log("SignUp function executed", formData);
   };
 
   return (
@@ -23,6 +33,8 @@ const Login = () => {
           {state === "Sign Up" ? (
             <input
               name={"username"}
+              value={formData.username}
+              onChange={changeHandler}
               type={"text"}
               placeholder={"Your Name"}
               className={
@@ -33,6 +45,9 @@ const Login = () => {
             ""
           )}
           <input
+            name={"email"}
+            value={formData.email}
+            onChange={changeHandler}
             type={"email"}
             placeholder={"Email Address"}
             className={
@@ -40,6 +55,9 @@ const Login = () => {
             }
           />
           <input
+            name={"password"}
+            value={formData.password}
+            onChange={changeHandler}
             type={"password"}
             placeholder={"Password"}
             className={
