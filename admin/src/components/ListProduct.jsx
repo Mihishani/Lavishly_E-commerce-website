@@ -16,6 +16,18 @@ const ListProduct = () => {
     fetchInfo();
   }, []);
 
+  const remove_product = async (id) => {
+    await fetch("http://localhost:4000/removeproduct", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ id: id }),
+    });
+    await fetchInfo();
+  };
+
   return (
     <div
       className={
@@ -60,7 +72,7 @@ const ListProduct = () => {
                 <td>{product.category}</td>
                 <td>
                   <div className={"bold-22 pl-6 sm:pl-14 text-red-700"}>
-                    <TbTrash />
+                    <TbTrash onClick={() => remove_product(product.id)} />
                   </div>
                 </td>
               </tr>
